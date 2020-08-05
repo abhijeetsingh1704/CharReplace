@@ -1,5 +1,5 @@
 # CharReplace
-Replace special characters from file or directory names
+Replace special characters from files or directory names OR change file extensions
 
 
 ## Help
