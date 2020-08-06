@@ -9,6 +9,12 @@ python3 CharReplace.py -h
 
 `python3 CharReplace.py <directory/input_dir> <Char_to_replace, 1= one, 2= many> <what_to_replace> <what_to_replace_with>")`
 
+* positional arguments
+  - position 1 = input directory
+  - position 2 = number of characters to replace, 1 = one character, 2 = multiple characters
+  - position 3 = characters to replace (white space must be with quotes)
+  - position 4 = new characer introduced, (white space must be with quotes)
+
 ### Example
 
 #### replace spaces with underscore
