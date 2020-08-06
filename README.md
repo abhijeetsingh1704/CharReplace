@@ -1,6 +1,5 @@
 # CharReplace
-Replace special characters from files or directory names OR change file extensions
-
+CharReplace: a multipurpose program to replace special characters in file/directories names or rename files/directories
 
 ## Help
 
