@@ -23,3 +23,9 @@ python3 CharReplace.py -h
 #### change file extensions
 
 `python3 CharReplace.py <input_dir> 1 '.csv' '.txt'`
+
+#### removing complex special characer structures for example ._ or __ (double underscore)
+
+`python3 CharReplace.py <input_dir> 1 '._' '_'`
+
+`python3 CharReplace.py <input_dir> 1 '__' '_'`
