@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 # Script:       CharReplace.py
-# date:         tor  6 aug 2020 11:08:36 CEST
-# modified by:  Abhjeet SIngh
+# date:         Wed 24 mar 2021 21:34:24 CET
+# modified by:  Abhjeet Singh
 
 # imports
 import os
@@ -23,26 +23,19 @@ else:
     replace_what = sys.argv[3]
     replace_with = sys.argv[4]
 
-
-
-# get absolute path to directory
+    # get absolute path to directory
 pathabs = os.path.abspath(directory)
-
-
 
 # single of multiple char to replace
 if char_to_replace == 1:
     replace_what_list = replace_what
 elif char_to_replace > 1:
     replace_what_list = list(replace_what)
-
 #
-
 print("." * 50)
 print("Replacing \"" + str(replace_what_list) + "\" with \"" + str(replace_with) + \
     "\" from files/directories in path  \n\t=> " + str(pathabs))
 print("." * 50)
-
 
 #replace and rename files
 for whatword in os.listdir(pathabs):
@@ -61,3 +54,4 @@ for whatword in os.listdir(pathabs):
                     os.rename(whatword,withword)
                 except:
                     pass
+# End of script
