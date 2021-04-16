@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Script:       CharReplace.py
-# date:         Wed 24 mar 2021 21:34:24 CET
+# date:         fre 16 apr 2021 23:48:01 CEST
 # modified by:  Abhjeet Singh
 
 # imports
@@ -43,15 +43,15 @@ for whatword in os.listdir(pathabs):
         withword = whatword.replace(replace_what_list, replace_with)
         if (withword != whatword):
             try:
-                os.rename(whatword,withword)
-            except:
+                os.rename(os.path.join(pathabs , whatword), os.path.join(pathabs , withword))
+            except (RuntimeError, TypeError, NameError):
                 pass
     elif char_to_replace > 1:
         for char in replace_what_list:
             withword = whatword.replace(char, replace_with)
             if (withword != whatword):
                 try:
-                    os.rename(whatword,withword)
-                except:
+                    os.rename(os.path.join(pathabs , whatword), os.path.join(pathabs , withword))
+                except (RuntimeError, TypeError, NameError):
                     pass
 # End of script
