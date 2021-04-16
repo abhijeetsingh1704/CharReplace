@@ -15,6 +15,8 @@ if sys.argv[1] == str('-h'):
     print("\n[EXAMPLE]: python3 CharReplace.py <directory/input_dir> <Char_to_replace, 1= one, 2= many> <what_to_replace> <what_to_replace_with>")
     print("\n[EXAMPLE]: python3 CharReplace.py <input_dir> 1 ' ' '_'")
     print("[EXAMPLE]: python3 CharReplace.py <input_dir> 2 '.)[(])/ ' '_'\n")
+    print("Changing file extensions")
+    print("\n[EXAMPLE]: python3 CharReplace.py <input_dir> 1 '.fa' '.fasta'")
     exit()
 else:
     # get user variables
