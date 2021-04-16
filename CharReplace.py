@@ -10,13 +10,14 @@ import sys
 
 # help menu
 if sys.argv[1] == str('-h'):
-    print("\nCharReplace: a multipurpose program to replace special characters in file/directories names or rename files/directories")
-    print("Author: Abhijeet Singh, abhijeetsingh.aau@gmail.com\n\n")
-    print("\n[EXAMPLE]: python3 CharReplace.py <directory/input_dir> <Char_to_replace, 1= one, 2= many> <what_to_replace> <what_to_replace_with>")
+    print("\nCharReplace:\t - a multipurpose program to replace special characters in file/directories names or rename files/directories")
+    print("Version:\t - 1.0.2")
+    print("Author:\t\t - Abhijeet Singh, abhijeetsingh.aau@gmail.com\n")
+    print("\n[EXAMPLE]: python3 CharReplace.py <directory/input_dir> <Char_to_replace, 1= one, 2= many> <what_to_replace> <replace_with>")
     print("\n[EXAMPLE]: python3 CharReplace.py <input_dir> 1 ' ' '_'")
     print("[EXAMPLE]: python3 CharReplace.py <input_dir> 2 '.)[(])/ ' '_'\n")
     print("Changing file extensions")
-    print("\n[EXAMPLE]: python3 CharReplace.py <input_dir> 1 '.fa' '.fasta'")
+    print("\n[EXAMPLE]: python3 CharReplace.py <input_dir> 1 '.fa' '.fasta'\n")
     exit()
 else:
     # get user variables
