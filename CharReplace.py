@@ -8,14 +8,8 @@
 import os
 import sys
 
-# Check
-if len(sys.argv) == 1:
-   print('# No arguments passed')
-   print('# For help, use "CharReplace.py -h" ')
-   sys.exit()
-
 # help menu
-if sys.argv[1] == str('-h') or str('--help'):
+if sys.argv[1] == str('-h'):
     print("\nCharReplace:\t - a multipurpose program to replace special characters in file/directories names or rename files/directories")
     print("Version:\t - 1.0.2")
     print("Author:\t\t - Abhijeet Singh, abhijeetsingh.aau@gmail.com\n")
